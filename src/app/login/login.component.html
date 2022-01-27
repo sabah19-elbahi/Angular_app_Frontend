@@ -1,0 +1,32 @@
+<div class="container">
+  <div>
+    
+  </div>
+
+  <div class="row">
+    <div class="col-lg12 col-sm12 col-xs-12">
+      <h4 class="mt-4 mb-4">Login Form</h4>
+
+      <form action="">
+        <fieldset>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" [(ngModel)]="user.email" class="form-control" placeholder="Enter your email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="username">Password</label>
+            <input type="Password" name="password" id="password" [(ngModel)]="user.password" class="form-control" placeholder="Enter your password" required>
+          </div>
+
+          <div class="form-group">
+            <input class="btn btn-success mt-4" type="submit" name="submit" value="Login" (click)="submitLogin()">
+          </div>
+
+        </fieldset>
+      </form>
+
+    </div>
+  </div>
+</div>
